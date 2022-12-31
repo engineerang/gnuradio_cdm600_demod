@@ -1,0 +1,19 @@
+
+## Equipment List
+
+* 2 x Comtech CDM600 modems
+* 2 x Cisco 2811 ISR (iOS >= version 15)
+* 2 x VWIC2-2MFT-G703 (or VWIC2-1MFT-G703) # DO NOT USE VWIC2-2MFT-T1/E1 (VWIC2-1MFT-T1/E1) THEY WILL NOT WORK
+* 2 x DB9(F)-RJ45(M) serial cables
+* 2 x USB-to-DB9(M) adapters
+* 6 x 1M coaxial cables - terminated SMA(M)
+* 4 x BNC(M)-to-SMA(F) adapters
+* 2 x Attenuators (10dB) - terminated SMA(F->M)
+* 2 x 5MHz-1000MHz Direction Couplers (10dB) - terminated SMA(F)
+* 2 x DB15(M) breakout boards (https://www.amazon.com.au/Jienk-Solderless-Breakout-Connector-Solderfree/dp/B08XJ1Z6BP?th=1)
+* 2 x E1/T1 crossover cables
+* 2 x Cat5e Ethernet cables
+* 4 x IEC C13 power cables
+* 2 x Raspberry Pi's + power packs
+* 1 x PC 
+* Software Defined Radio (2 x RTL-SDR is a good cheap option)

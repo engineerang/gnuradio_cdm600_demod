@@ -1,0 +1,37 @@
+# CISCO 2811 ISR commands for G703 WIC on slot 0/subslot 1/port 0
+Router# configure terminal 
+Router(config)# card type e1 0/1
+Router(config)# controller e1 0/1/0
+Router(config-controller)# linecode hbd3
+Router(config-controller)# channel-group 0 unframed
+Router(config-controller)# exit
+Router(config)# exit
+Router# show controllers e1 0/1/0 brief
+
+# Configure serial interface on serial 0/subslot 1/port 0:channel-group 0 (Router A interface for CDM600 A)
+Router# configure terminal
+Router(config)# interface serial 0/1/0:0 
+Router(config-if)# ip address 192.168.1.1 255.255.255.252
+Router(config-if)# encapsulation hdlc
+Router(config-if)# exit
+Router(config)# exit
+
+# Configure ethernet interface on ethernet 0/subslot 0 (Router A to Raspberry Pi Host A)
+Router# configure terminal
+Router(config)# interface FastEthernet 0/0
+Router(config-if)# ip address 1.1.1.1 255.255.255.252
+Router(config-if)# exit
+Router(config)# exit
+
+# Configure DHCP for network 1.1.1.0/30 (Raspberry Pi Host A will get the IP ADDR 1.1.1.2)
+Router# configure terminal
+Router(config)# ip dhcp pool dhcp_1
+Router(dhcp-config)# network 1.1.1.0 255.255.255.252
+Router(dhcp-config)# default-router 1.1.1.1 
+Router(dhcp-config)# exit
+Router(config)# exit
+
+# Configure static route i.e. let Raspberry Pi Host A know the way to Raspberry Pi Host B (2.2.2.2) is via CMD600 B (192.168.1.2)
+Router# configure terminal
+Router(config)# ip route 2.2.2.0 255.255.255.252 192.168.1.2
+Router(config)# exit
