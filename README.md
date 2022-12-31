@@ -30,7 +30,7 @@ See [here](networking_config/README.md) for details on how to configure the Cisc
 ![Network Overview](images/networking_overview.PNG)
 
 ### CDM600 configuration and GNURadio flowgraphs
-For details on how to configure CDM600s and run the GNURadio flowgraphs, see:
+For details on how to configure the CDM600s and run the GNURadio flowgraphs, see:
  * [BPSK Configuration](gnuradio_flowgraphs/bpsk/README.md)
  * [QPSK Configuration](gnuradio_flowgraphs/qpsk/README.md)
 
