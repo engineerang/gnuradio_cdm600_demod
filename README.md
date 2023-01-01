@@ -14,7 +14,6 @@ This project implements a BPSK and QPSK demod/decode of the Comtech CDM600 using
 The inspiration for this project came from a website authored by Red Ballon Security as part of the DEFCON 2020 Hack-A-Satellite Space Security Challenge. [Chapter 7](https://nyan-sat.com/chapter7.html) of this website mentions using a USRP N210 and GNURadio to process the BPSK signalling sent from a Comtech CDM600 satellite modem. Still not quite sure how their implementation functioned.. I found it to be lacking in detail/technically it seemed to be missing important signal processing stages (like symbol sync and deframing..)
 
 ## Setup
----
 ### Equipment List
 Full list of equipment can be found [here.](docs/equipment_list.txt)
 
@@ -46,7 +45,6 @@ Results once the CDM600s and Cisco 2811s are configured for a 2048Kbps link.
 Using: [KootNet Network Testers](https://github.com/chad-ermacora/rp-network-testers)
 
 ## Helpful material
----
  * https://github.com/ryanvolz/radioconda
  * https://destevez.net
  * https://wiki.gnuradio.org/index.php/Guided_Tutorial_PSK_Demodulation
