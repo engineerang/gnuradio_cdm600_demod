@@ -13,13 +13,13 @@ The CDM600 does not directly have an Ethernet interface though it does supports 
 
 The Cisco 2811 ISR supports a wide range of [WAN interface cards](https://en.wikipedia.org/wiki/WAN_Interface_Card) (VWIC) namely a [T1/E1 G.703 VWIC](https://www.router-switch.com/cisco-vwic2-2mft-g703-datasheet-pdf.html).
 
+</center>
+
 <p align="middle">
  <img src="../images/ROU-2811.jpg" alt="2811 image" title="2811 image" width="50%" height="100%"/>
  <img src="../images/vwic2-2mft-g703.png" alt="vwic image" title="vwic image" width="40%" height="100%"/>
 
 </p>
-
-</center>
 
 ---
 ❕ **NOTE** ❕
