@@ -34,7 +34,7 @@ Very specific connectors/pinouts will be required to connect the CDM600 to the G
 ![Serial Cable](../images/serial_cable_details.PNG)
 
 ## iOS Configure Commands
-These commands enable to G703 interface and configure the network as described in the overview on the Cisco 2811 ISR.
+These commands enable the G703 interface and configure the network as described in the overview on the Cisco 2811 ISR.
 
 [Router A](Router_A_G703_WIC_CONFIGURE.txt)
 
