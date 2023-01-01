@@ -1,12 +1,17 @@
 # Comtech CDM600 GNURadio Demod
 
-![Spectrum](gnuradio_flowgraphs/SpecAn/SpecAn_output.PNG)
-
 ## Introduction
 ---
 This project implements a BPSK and QPSK demod/decode of the Comtech CDM600 using an LimeSDR (easily adaptable to other SDRs like the RTL-SDR) and GNURadio. Its does this by 'intercepting' and processing the RF signal to produce the network traffic as generated between two hosts.
 
 ![Concept Diagram](images/concept.PNG)
+
+
+<p align="middle">
+<img src="gnuradio_flowgraphs/SpecAn/SpecAn_output.PNG" alt="CDM600-carriers" title="CDM600 Carriers" width="33%" height="600" />
+<img src="gnuradio_flowgraphs/qpsk/qpsk_demod_output.PNG" alt="CDM600-demod" title="CDM600 Demod" width="33%" height="600" />
+<img src="gnuradio_flowgraphs/qpsk/cdm600_traffic_output.PNG" alt="CDM600-traffic" title="CDM600 Traffic" width="33%" height="600" />
+</p>
 
 The inspiration for this project came from a website authored by Red Ballon Security as part of the DEFCON 2020 Hack-A-Satellite Space Security Challenge. [Chapter 7](https://nyan-sat.com/chapter7.html) of this website mentions using a USRP N210 and GNURadio to process the BPSK signalling sent from a Comtech CDM600 satellite modem. Still not quite sure how their implementation functioned.. I found it to be lacking in detail/technically it seemed to be missing important signal processing stages (like symbol sync and deframing..)
 
@@ -16,7 +21,8 @@ The inspiration for this project came from a website authored by Red Ballon Secu
 Full list of equipment can be found [here.](docs/equipment_list.txt)
 
 ### Overview
-![Setup Overview](images/racked.PNG)
+
+!["Setup Overview"](images/racked.PNG)
 
 ### Connectivity Diagram
 #### Front
@@ -35,6 +41,8 @@ For details on how to configure the CDM600s and run the GNURadio flowgraphs, see
  * [QPSK Configuration](gnuradio_flowgraphs/qpsk/README.md)
 
 ## Network throughput test
+Results, once the CDM600s and Cisco 2811s are configured for a 2048Kbps link.
+
 ![Network Throughput Test](images/network_throughput_test.PNG)
 
 Using: [KootNet Network Testers](https://github.com/chad-ermacora/rp-network-testers)
