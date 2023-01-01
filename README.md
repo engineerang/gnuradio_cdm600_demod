@@ -1,7 +1,5 @@
 # Comtech CDM600 GNURadio Demod
 
-## Introduction
----
 This project implements a BPSK and QPSK demod/decode of the Comtech CDM600 using an LimeSDR (easily adaptable to other SDRs like the RTL-SDR) and GNURadio. Its does this by 'intercepting' and processing the RF signal to produce the network traffic as generated between two hosts.
 
 ![Concept Diagram](images/concept.PNG)
