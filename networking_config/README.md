@@ -29,7 +29,7 @@ It is absolutely necessary that you use a **VWIC2-1MFT-G703** or **VWIC2-2MFT-G7
 ---
 
 ## Making the E1/T1 DB-15(M) to RJ48 cables
-Very specific cables with the pinouts will be required to connect the CDM600 to the G703 VWIC on the Cisco Router. If you have trouble sourcing a cable (like I did), you can make one as described below. 
+Very specific connectors/pinouts will be required to connect the CDM600 to the G703 VWIC on the Cisco Router. If you have trouble sourcing a cable (like I did), you can make one as described below. 
 
 ![Serial Cable](../images/serial_cable_details.PNG)
 
